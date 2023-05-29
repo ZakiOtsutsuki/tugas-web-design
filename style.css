@@ -1,0 +1,75 @@
+html, body {
+    margin: 0;
+}
+
+/* heading section styling start */
+.header {
+    display: flex;
+    height: 75px;
+    background-color: #D9D9D9;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: normal;
+}
+/* heading section styling start */
+
+/* Page daftar content section styling start */
+.content {
+    height: 530px;
+    background-color: #FFEAC9;
+}
+
+.content h1 {
+    margin: 0;
+    padding-top: 50px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.registration {
+    width: 40%;
+    height: 300px;
+    background-color: #FFE49D;
+    margin: auto;
+    border-radius: 20px;
+}
+
+table {
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+tr, th {
+    text-align: left; 
+    font-weight: 100;
+    padding: 12px;   
+}
+
+input {
+    height: 30px;
+    width: 300px;
+}
+
+th:last-child {
+    text-align: center;
+} 
+
+#tombol-daftar {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    color: black;
+}
+/* Page daftar content section styling end */

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wIDth=device-wIDth, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Perpustakaan Umum</h1>
+        </div>
+        <div class="table">
+            <table class="tablecontent">
+                <th colspan="6">Daftar Buku</th>
+                <tr class="tablesubheader">
+                    <td>ID</td>
+                    <td>Judul</td>
+                    <td>Penulis</td>
+                    <td>Penerbit</td>
+                    <td>Tahun Terbit</td>
+                    <td>Stok</td>
+                </tr>
+                <tr>
+                    <td>B1001</td>
+                    <td>Judul A</td>
+                    <td>Penulis A</td>
+                    <td>Penerbit A</td>
+                    <td>66 MYA</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>B1002</td>
+                    <td>Judul B</td>
+                    <td>Penulis B</td>
+                    <td>Penerbit B</td>
+                    <td>252 MYA</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>B1003</td>
+                    <td>Judul C</td>
+                    <td>Penulis C</td>
+                    <td>Penerbit C</td>
+                    <td>375 MYA</td>
+                    <td>10</td>
+                </tr>
+            </table>
+        </div>
+        <div class="subcontent1">
+            <div class="petugas">
+                <h4>Daftar Petugas<br></h4>
+                <ul>
+                    <li>(P101) NPC1</li>
+                    <li>(P102) NPC2</li>
+                </ul>
+            </div>
+            <div class="subcontent1-1">
+                <div class="peminjaman">
+                    <h4>Pengajuan Peminjaman<br></h4>
+                    <form action="">
+                        <table>
+                            <tr>
+                                <td>ID Buku</td>
+                                <td>
+                                    <select ID="IDbuku">
+                                        <option value="B1001">B1001</option>
+                                        <option value="B1002">B1002</option>
+                                        <option value="B1003">B1003</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ID Petugas</td>
+                                <td>
+                                    <select ID="IDpetugaspinjam">
+                                        <option value="P101">P101</option>
+                                        <option value="P102">P102</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="submit" ID="tombolpinjam" value="Pinjam">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="pengembalian">
+                    <h4>Pengajuan Pengembalian<br></h4>
+                    <form action="">
+                        <table>
+                            <tr>
+                                <td>ID Peminjaman</td>
+                                <td>
+                                    <input type="text" ID="IDpinjam">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ID Petugas</td>
+                                <td>
+                                    <select ID="IDpetugaskembali">
+                                        <option value="P101">P101</option>
+                                        <option value="P102">P102</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="submit" ID="tombolkembali" value="Kembali">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="table">
+            <table class="tablecontent">
+                <th colspan="4">Daftar Peminjaman</th>
+                <tr class="tablesubheader">
+                    <td>ID</td>
+                    <td>Judul</td>
+                    <td>Petugas</td>
+                    <td>Tanggal</td>
+                </tr>
+                <tr>
+                    <td>L10001</td>
+                    <td>Judul A</td>
+                    <td>NPC 1</td>
+                    <td>31-02-2023</td>
+                </tr>
+            </table>
+        </div>
+        <div class="table">
+            <table class="tablecontent">
+                <th colspan="4">Daftar Pengembalian</th>
+                <tr class="tablesubheader">
+                    <td>ID</td>
+                    <td>Peminjaman</td>
+                    <td>Petugas</td>
+                    <td>Tanggal</td>
+                </tr>
+                <tr>
+                    <td>R10001</td>
+                    <td>L10001</td>
+                    <td>NPC 1</td>
+                    <td>32-02-2023</td>
+                </tr>
+            </table>
+        </div>
+        <div class="subcontent2">
+            <div class="anggota">
+                <h4>Info Anggota<br></h4>
+                <table>
+                    <tr>
+                        <td>ID Anggota</td>
+                        <td>:</td>
+                        <td>A10001</td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td>Anggota 1</td>
+                    </tr>
+                    <tr>
+                        <td>No HP</td>
+                        <td>:</td>
+                        <td>080000000001</td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>:</td>
+                        <td>Bumi</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button type="button">Logout</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="footer">
+            Copyright &copy; 2023
+        </div>
+    </div>
+</body>
+</html>

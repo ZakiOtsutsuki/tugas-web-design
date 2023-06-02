@@ -56,7 +56,7 @@ td:last-child {
     text-align: center;
 } 
 
-#tombol-daftar {
+#tombol-daftar, #tombol-login {
     width: 100px;
     height: 40px;
     border-radius: 10px;

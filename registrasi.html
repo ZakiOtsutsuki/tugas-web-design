@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="src/img/logo.png" alt="">
+        <h1>Sistem Perpustakaan Daerah</h1>
+        <img src="src/img/lambang-kabupaten.png" id="lambang-kabupaten">
+    </div>
+    <div class="main">
+        <div class="login">
+            <div class="button-container">
+                <button class="onclick" id="toggle-login" onclick="showlogin()">Login</button>
+                <button class="notclick" id="toggle-daftar" onclick="showdaftar()">Daftar</button>
+            </div>
+            <div class="form-container">
+            <form action="">
+                <table>
+                    <caption>Halo!</caption>
+                    <tr>
+                        <td><label for="name">Nama</label></td>
+                        <td><input type="text" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="id">ID</label></td>
+                        <td><input type="text" pattern="[0-9]" id="id"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Masuk" id="tombol-login"></td>
+                    </tr>
+                </table>
+            </form>
+            </div>
+        </div>
+        <div class="daftar">
+            <div class="button-container">
+                <button class="notclick" id="toggle-login" onclick="showlogin()">Login</button>
+                <button class="onclick" id="toggle-daftar" onclick="showdaftar()">Daftar</button>
+            </div>
+            <div class="form-container">
+            <form action="">
+                <table>
+                    <caption>Selamat Datang!</caption>
+                    <tr>
+                        <td><label for="name">Nama</label></td>
+                        <td><input type="text" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone-number">No HP</label></td>
+                        <td><input type="text" pattern="[0-9]" id="phone-number"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Alamat</label></td>
+                        <td><input type="text" id="address"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Daftar" id="tombol-daftar"></td>
+                    </tr>
+                </table>
+            </form>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="footer">
+
+    </div> -->
+    <script src="src/js/script.js"></script>
+</body>
+</html>

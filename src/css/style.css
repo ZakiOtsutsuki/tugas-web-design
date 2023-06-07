@@ -1,91 +1,113 @@
-html, body {
+body {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
     margin: 0;
     padding: 0;
 }
 
-/* heading section styling start */
+/*  */
 .header {
+    background-color: #1C7BC0;
     display: flex;
-    background-image: url("../img/header.jpg");
-    background-size: cover;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
     width: 100%;
-    height: 150px;
+}
+
+.header img {
+    height: 75px;
+    padding: 0 20px;
+}
+
+.header h1 {
+    color: white;
+}
+
+#lambang-kabupaten {
+    height: 60px;
+}
+/*  */
+
+/*  */
+.main {
+    display: flex;
     align-items: center;
     justify-content: center;
+    height: 500px;
+    padding-top: 80px;
 }
 
-.header h1{
-    font-family: 'Impact';
-    font-size: 50px;
-    color: white;
-    -webkit-text-stroke: 1px black;
-}
-/* heading section styling start */
-
-/* Page daftar content section styling start */
-.content {
-    height: 530px;
-    background-color: #FFEAC9;
-}
-
-.content h1 {
-    margin: 0;
-    padding-top: 50px;
-    text-align: center;
-    font-weight: normal;
-}
-
-.registration {
+.login, .daftar {
     width: 40%;
-    height: 300px;
-    background-color: #FFE49D;
-    margin: auto;
-    border-radius: 20px;
+    height: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.button-container {
+    display: flex;
+}
+
+.button-container button {
+    flex: 1;
+    height: 50px;
+    border: none;
+}
+
+.form-container {
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: snow;
 }
 
-.registration td {
-    text-align: left; 
-    font-weight: 100;
-    padding: 12px;   
+.form-container td {
+    padding: 10px;
 }
 
-.registration input {
-    height: 30px;
+.form-container input {
+    height: 40px;
     width: 300px;
 }
 
-.registration td:last-child {
+.form-container td:last-child {
     text-align: center;
-} 
+}
 
 #tombol-daftar, #tombol-login {
     width: 100px;
     height: 40px;
     border-radius: 10px;
+    background-color: #1C7BC0;
+    color: white;
+    border: none;
 }
 
-.content a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    color: black;
+.onclick {
+    background-color: #1C7BC0;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-/* Page daftar content section styling end */
 
-/* mainpage styling start */
+.notclick {
+    background-color: lightgray;
+}
+/*  */
+
+/*  */
 .container {
     box-sizing: border-box;
-    background-color: #FFEAC9;
-    width: 100%;
+    background-color: snow;
+    width: 90%;
+    margin: 120px auto 40px;
     font-family: Arial;
     font-size: large;
 }
 
 .table {
+    padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,9 +141,9 @@ html, body {
     justify-content: left;
     padding-left: 10px;
     padding-right: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-left: 20px;
-    width: 15%;
+    width: 25%;
 }
 
 .petugas ul {
@@ -139,11 +161,12 @@ html, body {
 }
 
 .peminjaman, .pengembalian {
-    background-color: #FFE49D;
-    border-radius: 20px;
+    background-color: #1C7BC0;
+    border-radius: 10px;
     padding: 10px 0px 30px 10px;
     width: auto;
     margin: 10px;
+    color: white;
 }
 
 .subcontent2 {
@@ -152,20 +175,30 @@ html, body {
 }
 
 .anggota {
-    width: 80%;
-    background-color: #B4FFF1;
-    border-radius: 20px;
+    width: 40%;
+    background-color: #1C7BC0;
+    border-radius: 10px;
     padding: 10px 10px 30px 10px;
     margin: 10px;
+    color: white;
 }
-/* mainpage styling start */
 
-/* footer section styling start */
-.footer{
-    display: flex;
-    width: 100%;
-    height: 150px;
-    align-items: center;
-    justify-content: center;
+.anggota h4 {
+    text-align: center;
 }
-/* footer section styling end */
+
+.anggota table {
+    margin-left: 20px;
+}
+/*  */
+
+/*  */
+.footer {
+    background-color: #1C7BC0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    color: white;
+}
+/*  */
